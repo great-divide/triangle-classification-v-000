@@ -27,11 +27,7 @@ class Triangle
   
   def valid?
     @sides.sort!
-    # if self.side > (self.side1 - self.side2) && self.side3 < (self.side1 + self.side2) && side1*side2*side3 != 0
-      # true
-    # else raise TriangleError
-    # end
-    
+ 
     if @sides[2] > (@sides[1] - @sides[0]) && @sides[2] < (@sides[1] + @sides[0]) && side1*side2*side3 != 0
       true
     else raise TriangleError
