@@ -19,6 +19,8 @@ class Triangle
       :equilateral
     elsif self.isosceles?
       :isosceles
+    elsif self.scalene?
+      :scalene
     end
   end
   
@@ -38,6 +40,13 @@ class Triangle
   
   def isosceles?
     if self.valid? && side1 == side2 || side2 == side3 || side1 == side3 && self.equilateral? == false
+      true
+    else false
+    end
+  end
+  
+  def scalene?
+    if self.valid? && side1 != side2 && side2 != side3 && side1 != side3
       true
     else false
     end
