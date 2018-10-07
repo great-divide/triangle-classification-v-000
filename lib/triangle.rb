@@ -37,7 +37,7 @@ class Triangle
   end
   
   def isosceles?
-    if self.valid? && side1 == side2 || side2 == side3 || side1 == side3
+    if self.valid? && side1 == side2 || side2 == side3 || side1 == side3 && self.equilateral? == false
       true
     else false
     end
