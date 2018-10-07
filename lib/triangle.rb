@@ -25,7 +25,7 @@ class Triangle
   end
   
   def valid?
-    if self.side3 > (self.side1 - self.side2) && self.side3 < (self.side1 + self.side2)
+    if self.side3 > (self.side1 - self.side2) && self.side3 < (self.side1 + self.side2) && side1*side2*side3 != 0
       true
     else false
     end
