@@ -17,6 +17,8 @@ class Triangle
       return TriangleError
     elsif self.equilateral?
       :equilateral
+    elsif self.isosceles?
+      :isosceles
     end
   end
   
