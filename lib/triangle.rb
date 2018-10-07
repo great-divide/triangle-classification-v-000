@@ -35,5 +35,12 @@ class Triangle
     else false
     end
   end
+  
+  def isosceles?
+    if self.valid? && side1 == side2 || side2 == side3 || side1 == side3
+      true
+    else false
+    end
+  end
     
 end
