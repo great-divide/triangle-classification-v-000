@@ -26,10 +26,12 @@ class Triangle
   end
   
   def valid?
-    if self.side3 > (self.side1 - self.side2) && self.side3 < (self.side1 + self.side2) && side1*side2*side3 != 0
-      true
-    else raise TriangleError
-    end
+    # if self.side3 > (self.side1 - self.side2) && self.side3 < (self.side1 + self.side2) && side1*side2*side3 != 0
+      # true
+    # else raise TriangleError
+    # end
+    
+    side_array = @sides.combination(2)
   end
   
   def equilateral?
