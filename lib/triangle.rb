@@ -23,5 +23,12 @@ class Triangle
     else false
     end
   end
+  
+  def equilateral?
+    if self.valid? && (side1 == side2 == side3)
+      true
+    else false
+    end
+  end
     
 end
